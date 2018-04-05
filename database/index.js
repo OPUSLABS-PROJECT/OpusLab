@@ -4,13 +4,13 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'root', //change password to yours
-  database : 'recipes'
+  database : 'opus'
 });
 
  //insert message
 var insertOne= function(name, companyName, description, dateDue, phone, email, callback){
   connection.query('INSERT INTO list (name, companyName, description, dateDue, phone, email) VALUES (?,?,?,?,?,?)',
-  [name, companyName, description, dateDue, phone, email], (err, results, fields)=>{
+  [name, companyName, description, dateDue, phone, email], (err, results)=>{
     if(err){
       console.log("insert error")
       callback(err, null)

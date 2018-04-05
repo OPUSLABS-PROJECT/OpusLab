@@ -1,5 +1,4 @@
 import React from 'react';
-import $ from 'jquery';
 
 class ContactForm extends React.Component {
   constructor(props){
@@ -51,7 +50,7 @@ class ContactForm extends React.Component {
       })
     }
     add(){
-      this.props.addMessage(this.state.name, this.state.companyName, this.state.description, this.state.dateDue, this.state.phone, this.state.email)
+      this.props.addMessage(this.state.name, this.state.companyName, this.state.description, this.state.dateDue, this.state.phone, this.state.email);
       this.setState({
         name: '',
         companyName: '',
@@ -61,24 +60,25 @@ class ContactForm extends React.Component {
         email: ''
       })
     }
+
   render() {
     return(
       <form>
       <div id="Contact-Form">
       <h1>Platicame de tu Proyecto!</h1><br />
       <h3>Llena el formato para saber un poco mas sobre ti y tu proyecto.</h3><br />
-      <h2>Hola!</h2><p>Mi nombre es <input onChange={this.updateName} value={this.state.name} type="text" placeholder="Nombre completo"/> y soy
-      parte de <input onChange={this.updateCompanyName} value={this.state.companyName} type="text" placeholder="Nombre de Empresa"/>,
+      <h2>Hola!</h2><p>Mi nombre es <input onChange={this.updateName} value={this.state.name} placeholder="Nombre completo"/> y soy
+      parte de <input onChange={this.updateCompanyName} value={this.state.companyName} placeholder="Nombre de Empresa"/>,
       <br /> estoy buscando alguien que me ayude con un proyecto:
-      <br /> <textarea onChange={this.updateDescription} value={this.state.description} type="text" name="Description" placeholder="Pequeña descripcion del trabajo"/>.
-      <br /> Este proyecto tengo un objetivo de completarlo en o cerca de <input onChange={this.updateDueDate} value={this.state.dateDue} type="text" placeholder='dd/mm/yy' />.
-      <br /> Pueden contactarme por telefono: <input onChange={this.updatePhone} value={this.state.phone} type="text" placeholder="Numero de telefono" />
-      o al correo electronico: <br /><input onChange={this.updateEmail} value={this.state.email} type="text" placeholder="Correo electronico"/> para hablar mas.
+      <br /> <textarea onChange={this.updateDescription} value={this.state.description} name="Description" placeholder="Pequeña descripcion del trabajo"/>.
+      <br /> Este proyecto tengo un objetivo de completarlo en o cerca de <input onChange={this.updateDueDate} value={this.state.dateDue} placeholder='dd/mm/yy' />.
+      <br /> Pueden contactarme por telefono: <input onChange={this.updatePhone} value={this.state.phone} placeholder="Numero de telefono" />
+      o al correo electronico: <br /><input onChange={this.updateEmail} value={this.state.email} placeholder="Correo electronico"/> para hablar mas.
       <br />
       Gracias!
       </p>
       <br />
-        <button onClick={this.add}>Enviar!</button>
+      <button onClick={this.add}>Enviar!</button>
       </div>
       </form>
     )

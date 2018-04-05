@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 
+/*components*/
 import ContactForm from './component/Contact.jsx'
 import Video from './component/Video.jsx'
 import Footer from './component/Footer.jsx'
@@ -27,7 +28,7 @@ class App extends React.Component {
       url:'/sendMessage',
       contentType:'application/json',
       data:JSON.stringify({
-        name: url,
+        name: name,
         companyName: companyName,
         description: description,
         dateDue: dateDue,
@@ -40,7 +41,7 @@ class App extends React.Component {
   render(){
   return (
   <div>
-  <h1>--------------PROXIMAMENTE--------------</h1>
+  <h1 text-align='center'>PROXIMAMENTE</h1>
   <br />
   <Video />
   <br />

@@ -1,11 +1,9 @@
 import React from 'react'
 
-const Footer = () =>{
-  return (
+const Footer = () => (
     <div>
     <footer id="footer-distributed">
-
-  <div >
+    <div >
     <p >
       <span>Síguenos en:</span></p>
     <div >
@@ -20,6 +18,6 @@ const Footer = () =>{
 </footer>
 </div>
   )
-}
+
 
 export default Footer;

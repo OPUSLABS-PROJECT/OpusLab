@@ -15,4 +15,4 @@ CREATE TABLE list (
 );
 
 INSERT INTO list(name, companyName, description, dateDue, phone, email) VALUES
-('hi','company', 'need video edited', '12/12/2019', '1234678906', 'map@gmail.com')
+('hi','company', 'need video edited', '12/12/2019', '1234678906', 'map@gmail.com');
