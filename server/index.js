@@ -1,11 +1,12 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var database = require('../database/index.js');
-
+var database = require('../database/index.js')
 var app = express();
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../client/dist'));
+
+const port = process.env.PORT || 8080;
 
 
 //post requests to post a message
@@ -27,12 +28,11 @@ app.post('/sendMessage', function(req, res){
         res.sendStatus(500)
       } else {
         res.status(200).json(results)
-        console.log('done!');
       }
     })
   }
 })
 
-app.listen(3000, function() {
-  console.log('listening on port 3000!');
+app.listen(port, function() {
+  console.log(`listening on port ${port}!`);
 });

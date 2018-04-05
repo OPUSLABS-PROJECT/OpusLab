@@ -15,7 +15,14 @@ body {
    font-style: normal;
 
 }
-
+#imglogo{
+  text-align: right;
+  align-items: flex-end;
+}
+#video {
+  text-align: center;
+  align-items: center;
+}
 /*Contact Page*/
 h1, h2, h3 {
   text-align: left;

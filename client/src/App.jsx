@@ -41,7 +41,10 @@ class App extends React.Component {
   render(){
   return (
   <div>
-  <h1 text-align='center'>PROXIMAMENTE</h1>
+  <div id="imglogo">
+  <img src="opus.png" alt="OpusLab" />
+  </div>
+  <h1>PROXIMAMENTE</h1>
   <br />
   <Video />
   <br />
