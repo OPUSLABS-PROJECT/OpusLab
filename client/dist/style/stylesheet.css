@@ -3,6 +3,56 @@
 body {
   background: #f1f1f1;
 }
+/*Header bar*/
+#appBar{
+  background-color: #B60027;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#appBar:hover {
+    background-image: linear-gradient(to right bottom, #b60027, #97142e, #771e30, #56212d, #362126);
+}
+#Home {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #ffff;
+  padding-left: 15px;
+  padding-right: 125px;
+  text-align: right;
+}
+#About{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
+}
+
+#Workshop{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 30px;
+  color: #fff;
+  text-align: right;
+}
+#Contactus{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
+}
+
+/*DropDown Proyectos*/
+#proyectos{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
+}
+#team{
+  height: 400px;
+  width: 100%;
+  padding-top: 20px;
+}
 
 .navbar {
   background: #fff;
