@@ -43,7 +43,7 @@ class Proyectos extends React.Component {
           onClose={this.handleClose}>
           <MenuItem id='Produccion' component={Link} to="/production">Produccion</MenuItem>
           <MenuItem id='Realizacion' component={Link} to="/realizacion">Realizacion de Contenidos</MenuItem>
-          <MenuItem id='Seguimiento' component={Link} to="/realizacion">Seguimiento de Obra</MenuItem>
+          <MenuItem id='Seguimiento' component={Link} to="/seguimiento">Seguimiento de Obra</MenuItem>
           <MenuItem id='Documentary' component={Link} to="/followUp">Documentales</MenuItem>
           <MenuItem id='Colaboration' component={Link} to="/colaboration">Colaboraciones</MenuItem>
         </Menu>
