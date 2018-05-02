@@ -1,7 +1,9 @@
 body {
-    background: #fff;
-    padding-top: 10px;
-
+     background-image: url("partshort.gif") ;
+     background-repeat: round;
+     background-attachment: local;
+     background-position: top;
+     background-size: auto;
 }
 /*Home page video and */
 
