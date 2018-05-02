@@ -1,1 +1,0 @@
-//photogalleryimport React from 'react';
